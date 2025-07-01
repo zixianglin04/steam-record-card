@@ -4,7 +4,7 @@
   ],
   "routes": [
     {
-      "src": "/card",
+      "src": "/api",
       "dest": "api/main.py"
     }
   ]
