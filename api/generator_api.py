@@ -57,10 +57,12 @@ def generate_svg(appid, STEAM_ID, API_KEY):
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="460" height="215">
     <style>
-        .stat {{
+        .stat {{}
             font: 30px "American Typewriter", cursive;
             fill: white;
-            font-weight: regular;
+            stroke: black;
+            stroke-width: 2px;
+            paint-order: stroke fill;
         }}
         .shadow {{
             font: 30px "American Typewriter", cursive;
