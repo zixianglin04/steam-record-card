@@ -61,7 +61,7 @@ def generate_svg(appid, STEAM_ID, API_KEY):
             font: 30px "American Typewriter", cursive;
             fill: white;
             stroke: black;
-            stroke-width: 2px;
+            stroke-width: 3px;
             paint-order: stroke fill;
         }}
         .shadow {{
@@ -76,14 +76,14 @@ def generate_svg(appid, STEAM_ID, API_KEY):
     <image href="data:image/png;base64,{img_b64}" x="0" y="0" width="460" height="215" />
 
     <!-- Text -->
-    <text x="10" y="205" class="shadow">⏱ {playtime_h}h</text>
-    <text x="10" y="205" class="stat">⏱ {playtime_h}h</text>
+    <text x="10" y="205" class="shadow">⏳️ {playtime_h}h</text>
+    <text x="10" y="205" class="stat">⏳️ {playtime_h}h</text>
     '''
 
     if achievement_pct is not None:
         svg += f'''
-        <text x="320" y="205" class="shadow">🏆 {achievement_pct}%</text>
-        <text x="320" y="205" class="stat">🏆 {achievement_pct}%</text>
+        <text x="440" y="205" class="shadow" text-anchor="end">{achievement_pct}% 🏆</text>
+        <text x="440" y="205" class="stat" text-anchor="end">{achievement_pct}% 🏆</text>
         '''
 
     svg += '</svg>'
