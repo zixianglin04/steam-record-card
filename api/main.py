@@ -7,17 +7,17 @@
 
 
 from fastapi import FastAPI, Response, Query
+from fastapi.responses import PlainTextResponse
 from generator_api import generate_svg_string
 
 app = FastAPI()
 
 @app.get("/card")
-def generate_card(
-    steam_id: str = Query(...),
-    appid: int = Query(...)
-):
+def generate_card(steam_id: str, appid: int):
     try:
-        svg_data = generate_svg_string(appid, steam_id)
-        return Response(content=svg_data, media_type="image/svg+xml")
+        svg = generate_svg_string(appid, steam_id)
+        return Response(content=svg, media_type="image/svg+xml")
     except Exception as e:
-        return {"error": str(e)}
+        return PlainTextResponse(f"Error: {str(e)}", status_code=500)
+
+handler = app

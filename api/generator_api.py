@@ -90,5 +90,5 @@ def generate_svg(appid, STEAM_ID, API_KEY):
 
 
 def generate_svg_string(appid, STEAM_ID):
-    API_KEY = os.environ.get("API_KEY")
+    API_KEY = os.getenv("STEAM_API_KEY")
     return generate_svg(appid, STEAM_ID, API_KEY)
