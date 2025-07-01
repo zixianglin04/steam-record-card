@@ -8,7 +8,7 @@
 
 from fastapi import FastAPI, Response, Query
 from fastapi.responses import PlainTextResponse
-from generator_api import generate_svg_string
+from .generator_api import generate_svg_string
 
 app = FastAPI()
 
