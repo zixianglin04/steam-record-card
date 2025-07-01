@@ -82,8 +82,8 @@ def generate_svg(appid, STEAM_ID, API_KEY):
 
     if achievement_pct is not None:
         svg += f'''
-        <text x="440" y="205" class="shadow" text-anchor="end">{achievement_pct}% 🏆</text>
-        <text x="440" y="205" class="stat" text-anchor="end">{achievement_pct}% 🏆</text>
+        <text x="450" y="205" class="shadow" text-anchor="end">{achievement_pct}% 🏆</text>
+        <text x="450" y="205" class="stat" text-anchor="end">{achievement_pct}% 🏆</text>
         '''
 
     svg += '</svg>'
