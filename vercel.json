@@ -7,12 +7,5 @@
       "src": "/api",
       "dest": "api/main.py"
     }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "public/index.html",
-      "permanent": true
-    }
   ]
 }
