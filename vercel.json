@@ -10,8 +10,9 @@
   ],
   "redirects": [
     {
-      "src": "/",
-      "dest": "public/index.html"
+      "source": "/",
+      "destination": "public/index.html",
+      "permanent": true
     }
   ]
 }
