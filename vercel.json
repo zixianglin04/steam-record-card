@@ -7,10 +7,5 @@
       "src": "/api",
       "dest": "api/main.py"
     }
-  ],
-  "rewrites": [
-    { "source": "/.*", 
-      "destination": "/index.html" 
-    }
   ]
 }
