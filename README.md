@@ -2,6 +2,13 @@ API for generating STEAM record cards of games, showing the playtime and achivem
 
 The project is deployed on Vercel.
 
-Link Example: https://steam-record-card.vercel.app/api?steam_id=76561199030641631&appid=412830.
+## How to Use
 
+GET steam_id: `https://steamcommunity.com/profiles/{steam_id}/`.
+
+GET appid: `https://store.steampowered.com/app/{appid}/`.
+
+Go to Link: `https://steam-record-card.vercel.app/api?steam_id={steam_id}&appid={appid}`.
+
+---
 Inspired by [steam-stat](https://github.com/Ananto30/steam-stat).
